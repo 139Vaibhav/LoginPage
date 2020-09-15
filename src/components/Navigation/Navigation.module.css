@@ -1,0 +1,30 @@
+.outer {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  justify-content: space-evenly;
+}
+
+.space {
+  width: 20%;
+}
+.item {
+  font-size: 1.3rem;
+  color: rgb(187, 155, 218);
+  padding: 10px;
+}
+.item:hover {
+    cursor: pointer;
+}
+.toggler {
+  display: flex;
+}
+
+.toggleInner {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: rgb(187, 155, 218);
+}

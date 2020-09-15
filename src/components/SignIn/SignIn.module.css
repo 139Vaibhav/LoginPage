@@ -1,0 +1,39 @@
+.signOuter {
+  position: fixed;
+  top: 50%;
+  left: 60%;
+}
+
+.formOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInput {
+  font-size: 1.3rem;
+  color: rgb(199, 168, 230);
+  padding: 5px;
+  width: 400px;
+  background-color: transparent;
+  margin-bottom: 60px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 5px solid rgb(196, 134, 238);
+  outline: none;
+}
+
+.formInput::placeholder {
+  color: rgb(199, 168, 230);
+}
+
+.formSubmit {
+  border-radius: 6px;
+  width: 150px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: rgb(214, 185, 226);
+  border: 3px solid rgb(220, 195, 236);
+  padding: 10px;
+}
