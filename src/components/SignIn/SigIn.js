@@ -1,13 +1,11 @@
 import React from "react";
 import classes from "./SignIn.module.css";
-import Navigation from "../Navigation/Navigation";
 
 const signIn = () => {
   return (
-    <div className={classes.outer}>
-      <Navigation />
+    
       <div className={classes.signOuter}>
-        <form className={classes.formOuter}>
+        <form action='/signupmess' className={classes.formOuter}>
           <input
             type="text"
             className={classes.formInput}
@@ -25,8 +23,14 @@ const signIn = () => {
           ></input>
         </form>
       </div>
-    </div>
   );
 };
 
 export default signIn;
+
+
+
+
+
+
+

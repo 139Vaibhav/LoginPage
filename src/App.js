@@ -1,18 +1,21 @@
 import React from "react";
-import SignIn from "./components/SignIn/SigIn";
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Navigation from "./components/Navigation/Navigation";
-import classes from "./App.module.css";
-import Vdo from "./components/vdoplayer/Vdo"
-import bgvdo from "./images/bgvdo.mp4";
+import Signup from './pages/signup/signup'
+import SignIn from './pages/signIn/signIn'
+import SignupMess from './pages/signupMess/signupMess'
+
 function App() {
+
   return (
-    
-    <div className={classes.outer}>
-    <Vdo name={bgvdo}/>
-      <Navigation />
-      <SignIn />
-     </div>
-    
+    <Router>
+       <Navigation />
+        <Switch>
+          <Route exact path="/"  component={Signup} />
+          <Route path='/signin' component={SignIn} />
+          <Route path='/signupmess' component={SignupMess} />
+        </Switch>
+     </Router>
   );
 }
 
