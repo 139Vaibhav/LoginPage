@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
+import Vdo from "../vdoplayer/Vdo";
+import bgvdo1 from "../../images/bgvdo.mp4";
 import classes from "./SignIn.module.css";
+import Navigation from "../Navigation/Navigation";
+import { render } from "@testing-library/react";
 
-const signIn = () => {
+
+class signIn extends Component{
+  render() {
   return (
-    
+    <div className={classes.outer}>
+      <Navigation />
       <div className={classes.signOuter}>
-        <form action='/signupmess' className={classes.formOuter}>
+        <form className={classes.formOuter} onSubmit={this.playvdo}>
           <input
             type="text"
             className={classes.formInput}
@@ -22,15 +29,11 @@ const signIn = () => {
             value="Sign In"
           ></input>
         </form>
+        
       </div>
+    </div>
   );
+  };
 };
 
 export default signIn;
-
-
-
-
-
-
-
