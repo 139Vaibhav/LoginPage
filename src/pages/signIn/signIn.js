@@ -22,7 +22,7 @@ class SignIn extends Component {
         <SignInform />
         <Vdo name={this.state.videoName} loopCondition={this.state.loopCheck} />
         {this.state.loopCheck === false
-          ? setTimeout(this.videoChangeHandler, 3000)
+          ? setTimeout(this.videoChangeHandler, 2500)
           : null}
       </div>
     );
