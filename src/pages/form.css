@@ -89,14 +89,7 @@
     display: flex;
 }
 
-.formLogo2{
-    color: rgb(214, 185, 226);
-    font-size: 1.2rem;
-    position: relative;
-      top:12.5px;
-    border-bottom: 5px solid rgb(196, 134, 238);
-      padding: 5px;
-}
+
 .formSubmit {
     border-radius: 6px;
     width: 150px;
@@ -132,7 +125,7 @@
     font-size: 1.1rem;
     color: rgb(199, 168, 230);
     padding: 5px;
-    width: 100px;
+    width: 160px;
     background-color: transparent;
     border:none;
     outline: none;
