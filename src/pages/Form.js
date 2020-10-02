@@ -31,36 +31,36 @@ class form extends Component{
         </div>
         </div>
         <div className="sid2">
-        <div>
-        <FontAwesomeIcon icon={faGraduationCap} className="formLogo2" />
+        <div className="formInput2">
+        <FontAwesomeIcon icon={faGraduationCap}  />
         <input type="text" placeholder={"College"} required></input>
         </div>
-        <div>
-        <FontAwesomeIcon icon={faPen} className="formLogo2" />
+        <div  className="formInput2">
+        <FontAwesomeIcon icon={faPen} />
         <input type="text" placeholder="College id" required></input>
         </div>
         </div>
-        <div className="formInput">
+        <div  className="formInput">
         <FontAwesomeIcon icon={faBook}  />
         <input type="text" placeholder="Department"  required></input>
         </div>
         <div className="sid2">
-        <div>
-        <FontAwesomeIcon icon={faCity} className="formLogo2" />
+        <div  className="formInput2">
+        <FontAwesomeIcon icon={faCity} />
         <input type="text" placeholder="City" required></input>
         </div>
-        <div>
-        <FontAwesomeIcon icon={faHotel} className="formLogo2" />
+        <div  className="formInput2">
+        <FontAwesomeIcon icon={faHotel}  />
         <input type="text" placeholder="State"  required></input>
         </div>
         </div>
         <div className="sid2">
-        <div>
-        <FontAwesomeIcon icon={faLock} className="formLogo2" />
+        <div className="formInput2">
+        <FontAwesomeIcon icon={faLock} />
         <input type="Password" placeholder="Enter Password"  required></input>
         </div>
-        <div>
-        <FontAwesomeIcon icon={faLock} className="formLogo2" />
+        <div className="formInput2">
+        <FontAwesomeIcon icon={faLock}  />
         <input type="Password" placeholder="Confirm Password"   required></input>
         </div>
         </div>
