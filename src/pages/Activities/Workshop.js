@@ -26,11 +26,25 @@ class Workshop extends Component {
         </p>
       </div>
     ),
+    style1: { color: "rgb(199, 168, 230)" },
+    style2: { color: "rgb(199, 168, 230)" },
+    style3: { color: "rgb(199, 168, 230)" },
+    style4: { color: "rgb(199, 168, 230)" },
+    style5: { color: "rgb(199, 168, 230)" },
+    style6: { color: "rgb(199, 168, 230)" },
   };
 
   contentChangeHandler = (workshopName) => {
     let content = null;
+    let style1 = { color: "rgb(199, 168, 230)" };
+    let style2 = { color: "rgb(199, 168, 230)" };
+    let style3 = { color: "rgb(199, 168, 230)" };
+    let style4 = { color: "rgb(199, 168, 230)" };
+    let style5 = { color: "rgb(199, 168, 230)" };
+    let style6 = { color: "rgb(199, 168, 230)" };
+
     if (workshopName === "Sebi") {
+      style2 = { color: "rgb(242, 229, 255)" };
       content = (
         <div className={classes.text}>
           <p>
@@ -52,6 +66,7 @@ class Workshop extends Component {
         </div>
       );
     } else if (workshopName === "NetApp") {
+      style1 = { color: "rgb(242, 229, 255)" };
       content = (
         <div className={classes.text}>
           <p>
@@ -73,6 +88,7 @@ class Workshop extends Component {
         </div>
       );
     } else if (workshopName === "Canon") {
+      style3 = { color: "rgb(242, 229, 255)" };
       content = (
         <div className={classes.text}>
           <p>
@@ -94,6 +110,7 @@ class Workshop extends Component {
         </div>
       );
     } else if (workshopName === "GeDigital") {
+      style4 = { color: "rgb(242, 229, 255)" };
       content = (
         <div className={classes.text}>
           <p>
@@ -115,6 +132,7 @@ class Workshop extends Component {
         </div>
       );
     } else if (workshopName === "WellFargo") {
+      style5 = { color: "rgb(242, 229, 255)" };
       content = (
         <div className={classes.text}>
           <p>
@@ -136,6 +154,7 @@ class Workshop extends Component {
         </div>
       );
     } else if (workshopName === "Siemens") {
+      style6 = { color: "rgb(242, 229, 255)" };
       content = (
         <div className={classes.text}>
           <p>
@@ -157,7 +176,15 @@ class Workshop extends Component {
         </div>
       );
     }
-    this.setState({ display: content });
+    this.setState({
+      display: content,
+      style1: style1,
+      style2: style2,
+      style3: style3,
+      style4: style4,
+      style5: style5,
+      style6: style6,
+    });
   };
   render() {
     return (
@@ -169,36 +196,42 @@ class Workshop extends Component {
         <div className={classes.workshopNames}>
           <div
             className={classes.workshop}
+            style={this.state.style1}
             onClick={() => this.contentChangeHandler("NetApp")}
           >
             Net App
           </div>
           <div
             className={classes.workshop}
+            style={this.state.style2}
             onClick={() => this.contentChangeHandler("Sebi")}
           >
             Sebi
           </div>
           <div
             className={classes.workshop}
+            style={this.state.style3}
             onClick={() => this.contentChangeHandler("Canon")}
           >
             Canon
           </div>
           <div
             className={classes.workshop}
+            style={this.state.style4}
             onClick={() => this.contentChangeHandler("GeDigital")}
           >
             GE Digital
           </div>
           <div
             className={classes.workshop}
+            style={this.state.style5}
             onClick={() => this.contentChangeHandler("WellFargo")}
           >
             Wells Fargo
           </div>
           <div
             className={classes.workshop}
+            style={this.state.style6}
             onClick={() => this.contentChangeHandler("Siemens")}
           >
             Siemens
