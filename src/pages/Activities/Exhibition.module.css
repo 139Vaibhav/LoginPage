@@ -1,0 +1,50 @@
+.title {
+  color: rgb(199, 168, 230);
+  position: absolute;
+  font-size: 40px;
+  top: 12%;
+  left: 6%;
+}
+
+.workshopNames {
+  position: absolute;
+  font-size: 25px;
+  top: 40%;
+  left: 6%;
+}
+
+.workshop {
+  margin-bottom: 10px;
+}
+.text {
+  color: rgb(199, 168, 230);
+  position: absolute;
+  font-size: 15px;
+  top: 40%;
+  left: 30%;
+  height: 200px;
+  background-color: rgb(29, 0, 83);
+  overflow: scroll;
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track :horizontal {
+  visibility: hidden;
+  border: none;
+}
+::-webkit-scrollbar-track :vertical {
+  border: 5px solid rgb(81, 174, 236);
+  height: 150px;
+  width: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(127, 192, 235);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
